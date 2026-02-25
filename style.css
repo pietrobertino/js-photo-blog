@@ -1,0 +1,16 @@
+header {
+    background-image: url(./img/wall.png);
+
+    h1 {
+        font-family: "Edu TAS Beginner", cursive;
+        font-weight: bold;
+        color: black;
+        font-size: 4rem;
+    }
+}
+
+main {
+    background-image: url(./img/cork.png);
+    height: 100%;
+    font-family: "Sometype Mono", monospace;
+}
