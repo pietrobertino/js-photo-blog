@@ -1,8 +1,11 @@
+body {
+    font-family: "Edu TAS Beginner", cursive;
+}
+
 header {
     background-image: url(./img/wall.png);
 
     h1 {
-        font-family: "Edu TAS Beginner", cursive;
         font-weight: bold;
         color: black;
         font-size: 4rem;
@@ -12,8 +15,12 @@ header {
 main {
     background-image: url(./img/cork.png);
     min-height: 1200px;
-    font-family: "Sometype Mono", monospace;
-    font-style: italic;
+
+    .card-text {
+        font-family: "Sometype Mono", monospace;
+        opacity: 75%;
+        font-weight: bold;
+    }
 
     .card-img {
         width: 100%;
@@ -24,5 +31,14 @@ main {
         top: 0;
         left: 50%;
         transform: translate(-25%, -25%);
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+
+    header {
+        h1 {
+            font-size: 3rem;
+        }
     }
 }
