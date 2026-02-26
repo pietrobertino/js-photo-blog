@@ -60,7 +60,7 @@ main {
 
 .card:hover {
     cursor: pointer;
-    z-index: 2; 
+    z-index: 1; 
     transform: scale(1.05);
     rotate: 10deg;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.72);
