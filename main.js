@@ -16,3 +16,19 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
     .catch(error => {
         console.error(error);
     });
+
+const closeOverlayBtnNode = document.getElementById("close-overlay");
+const overlayNode = document.getElementById("overlay");
+const cardNodes = document.getElementsByClassName("card");
+
+//Le immagini al click aprono l'overlay
+for (const cardNode of cardNodes){
+    cardNode.addEventListener("click", function(){
+        manageOverlay(overlayNode);
+    });
+}
+
+//Il bottone chiudi quando premuto chiude l'overlay
+closeOverlayBtnNode.addEventListener("click", function(){
+    manageOverlay(overlayNode);
+})
